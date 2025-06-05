@@ -8,6 +8,8 @@ int main (){
     float area; 
     float pib; 
     char codigo[20]; 
+        float densidade; 
+        float pib_per_capita; 
 
     // Dados da Carta 2 
     int populacao2; 
@@ -15,6 +17,8 @@ int main (){
     float area2; 
     float pib2; 
     char codigo2[20]; 
+         float densidade2; 
+         float pib_per_capita2; 
 
      // Abertura do mesmo 
 printf("Desafio Aula: Super_Trunfo_C_Estacio. \n"); 
@@ -36,6 +40,10 @@ scanf("%f", &pib);
 printf("Digite o número de pontos turísticos:");
 scanf("%d", &pontos_turisticos);
 
+     //adicionando os relatórios de densidade1 e per capita1 abaixo; 
+densidade = populacao /area; 
+pib_per_capita = pib / populacao;      
+
 printf("\n");
 
      // Inserir os dados da SEGUNDA*2 carta  
@@ -54,6 +62,10 @@ scanf("%f", &pib2);
 printf("Digite o número de pontos turísticos: ");
 scanf("%d", &pontos_turisticos2);
 
+     //adicionando os relatórios da segunda densidade2 e per capita2 abaixo; 
+densidade2 = populacao2 /area2; 
+pib_per_capita2 = pib2 / populacao2;      
+
 printf("\n");
 printf("\n");
 
@@ -64,6 +76,8 @@ printf("Àrea: %.2f km*2\n", area);
 printf("População: %d\n milhões\n", populacao);
 printf("PIB: %.2f bilhões de reais\n", pib); 
 printf("Pontos Turísticos: %d\n", pontos_turisticos); 
+printf("Densidade Populacional: %.2f hab/km²\n", densidade);
+printf("PIB per Capita: %.2f reais\n", pib_per_capita);
 
 printf("\n");
 
@@ -74,7 +88,8 @@ printf("Àrea: %.2f km*2\n", area2);
 printf("População: %d\n milhões\n", populacao2);
 printf("PIB: %.2f bilhões de reais\n", pib2); 
 printf("Pontos Turísticos: %d\n", pontos_turisticos2); 
-
+printf("Densidade Populacional: %.2f hab/km²\n", densidade2);
+printf("PIB per Capita: %.2f reais\n", pib_per_capita2);
 
 
 
