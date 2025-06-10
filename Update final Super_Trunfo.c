@@ -107,12 +107,16 @@ printf("\n");
 
      // Comparações entre as Duas Cartas: 
 printf("\n*** Comparação entre as Cartas ***\n"); 
-printf("População: Carta 1 venceu %d\n", populacao > populacao2); 
-printf("Área: Carta 1 venceu %d\n", area > area2);
-printf("Pontos Turísticos: Carta 1 venceu %d\n", pontos > pontos2);
-printf("Densidade Populacional: Carta 1 venceu %d\n", densidade < densidade2);
-printf("PIB per Capita: Carta 1 venceu %d\n", pib_per_capita > pib_per_capita2);
-printf("Super Poder: Carta 1 venceu %d\n", super_poder > super_poder2);
+printf("População - Carta 1 venceu: %d\n", populacao > populacao2); 
+printf("Área - Carta 1 venceu: %d\n", area > area2);
+printf("Pontos Turísticos - Carta 1 venceu: %d\n", pontos_turisticos > pontos_turisticos2);
+printf("Densidade Populacional - Carta 1 venceu: %d\n", densidade < densidade2);
+printf("PIB per Capita - Carta 1 venceu: %d\n", pib_per_capita > pib_per_capita2);
+printf("Super Poder - Carta 1 venceu: %d\n", super_poder > super_poder2);
+
+// OBSERVAÇÃO importante ao final do resultado: 
+// resultado ( 0 ) = Falso
+// resultado ( 1 ) = Verdadeiro 
 
 return 0; 
 
